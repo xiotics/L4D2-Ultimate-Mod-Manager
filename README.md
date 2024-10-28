@@ -1,5 +1,7 @@
 # L4D2-Mod-Manager
 
+## Due to the tool being AI-generated and my current focus on learning coding, I'll no longer be maintaining or providing support for this tool for the time being.
+
 Manager to enable Mods in Addon disabled Modes (Versus)<br>
 Steam Guide can be found [here](https://steamcommunity.com/sharedfiles/filedetails/?id=3332849494)
 
