@@ -1,4 +1,5 @@
 import os
+import sys
 import tkinter as tk
 import shutil
 import re
@@ -20,7 +21,7 @@ GAMEINFO_PATH = os.path.join(GAME_FOLDER, 'left4dead2', 'gameinfo.txt')
 def check_setup():
     if not os.path.isfile(LEFT4DEAD2_EXE):
         messagebox.showerror("Setup Error", "left4dead2.exe not found, please move the Tool to the same directory.")
-        exit()
+        sys.exit()
 
     if not os.path.exists(USERMODS_PATH):
         os.makedirs(USERMODS_PATH)
@@ -135,25 +136,6 @@ def apply_changes():
 
 def refresh_mods():
     update_mod_lists()
-
-def move_mod_up():
-    selected_indices = enabled_listbox.curselection()
-    if selected_indices:
-        # Convert selection to a list and sort it in ascending order
-        sorted_indices = sorted(selected_indices)
-        # Store the original items to be moved
-        items_to_move = [enabled_listbox.get(index) for index in sorted_indices]
-        
-        for index in sorted_indices:
-            if index > 0:  # Normal move up
-                mod = enabled_listbox.get(index)
-                enabled_listbox.delete(index)
-                enabled_listbox.insert(index - 1, mod)
-
-        # Reselect the moved items
-        for mod in items_to_move:
-            new_index = enabled_listbox.get(0, tk.END).index(mod)
-            enabled_listbox.select_set(new_index)
 
 def move_mod_up():
     selected_indices = enabled_listbox.curselection()
