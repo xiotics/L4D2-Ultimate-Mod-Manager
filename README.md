@@ -1,4 +1,6 @@
-# L4D2-Mod-Manager
+# L4D2-Ultimate-Mod-Manager
+
+**This is a fork from [TheCraZyDuDee/L4D2-Mod-Manager](https://github.com/TheCraZyDuDee/L4D2-Mod-Manager). The code of this fork is modified from original.**
 
 ## Due to the tool being AI-generated and my current focus on learning coding, support for this is limited for now.
 
