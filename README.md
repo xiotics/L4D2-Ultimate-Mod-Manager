@@ -2,6 +2,20 @@
 
 **This is a fork from [TheCraZyDuDee/L4D2-Mod-Manager](https://github.com/TheCraZyDuDee/L4D2-Mod-Manager). The code of this fork is modified from original.**
 
+## What been added in this fork?
+
+### Force Enable Mods (GameInfo Override)
+
+This tool allows you to force-enable mods that do not work in certain gamemodes by injecting them directly into the game's `gameinfo.txt`.
+
+Instead of relying on the default addon system, the selected mod is copied to the root of the game directory and renamed to `pak01_dir.vpk`. A custom folder name can be chosen for better organization.
+
+The tool then automatically adds the mod to the `SearchPaths` section of `gameinfo.txt`, ensuring it is loaded with high priority.
+
+This method can override standard restrictions and make incompatible mods work across all gamemodes.
+
+This is the fatest way to make addons work in versus and scavenge
+
 ## Due to the tool being AI-generated and my current focus on learning coding, support for this is limited for now.
 
 Manager to enable Mods in Addon disabled Modes (Versus)<br>
